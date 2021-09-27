@@ -8,203 +8,432 @@
 
     <!-- CSS -->
     <link rel='stylesheet' href='css/css.css' media='screen'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="js/jQuery.js"></script>
 </head>
 <body>
+
+    <div class="containerLoghiHeader">
+        <div class="loghi">
+            <div class="logoAffidea"></div>
+            <div class="logoCdc"></div>
+        </div>
+        
+        <div class="header">
+            <div class="containerTitoli" onclick="apriScheda('index')">
+                <div class="titoli">
+                    <div class="titolo">
+                        <h1 id="titolo">Dr. Massimo Borla</h1>
+                    </div>
+            
+                    <div class="sottotitolo">
+                        Medico-chirurgo specialista in Ortopedia e Traumatologia
+                    </div>
+                </div>
+                
+                <!-- <div class="contattiHeader">
+                    <div class="contatto">
+                        <div class="testoContatto">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="contatto">
+                        <div class="testoContatto">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
     
-    <div class="header">
-        <div class="navbar">
-            <div class="navbarElement">
-                Home
-            </div>
-
-            <div class="navbarElement">
-                Trattamenti
-            </div>
-
-            <div class="navbarElement">
-                Chi Sono
-            </div>
-        </div>
-
-        <div class="titoli">
-            <div class="titolo">
-                <h1 id="titolo">Massimo Borla</h1>
-            </div>
+            <!--<div class="navbar">
+                <div class="navbarElement">
+                    Contatti
+                </div>-->
     
-            <div class="sottotitolo">
-                Medico-chirurgo specializzato in Ortopedia e Traumatologia
-            </div>
+                <!--<div class="navbarElement">
+                    Avvertenze
+                </div>-->
         </div>
+    
+            <!-- <div class="freccia">
+                <i class="fas fa-chevron-down"></i>
+            </div> -->
+        </div>
+    </div>
 
-        <div class="freccia">
-            <i class="fas fa-chevron-down"></i>
-        </div>
+    <div class="subNavbar">
+        <div class="subNavbarElement subNavbarElementActive" style="z-index: 4; margin: 0px;">Home</div>
+        <div class="subNavbarElement" style="z-index: 3;">Contatti</div>
+        <div class="subNavbarElement" style="z-index: 2;">Infiltrazioni</div>
+        <div class="subNavbarElement" style="z-index: 1;">Lombalgia</div>
     </div>
 
     <div class="center">
 
-        
+        <!--<p style="margin: 100px 0px;">
+            Medico specializzato in <spam class="parolaDifficile" onclick="parolaDifficile(that, 'Psicologina: paro')">traumatologia</spam>
+        </p>-->
 
-        <div id="chiSono" class="sezioneTrasparente">
+        <!-- <div class="titoloSezione">
+            Quando e dove puoi trovarmi
+        </div>
+
+        <div class="sezioneHome">
+            <div class="containerGiorni">
+                <div class="giornoStudio">
+                        <div class="nomeStudio">
+                            Lunedì
+                        </div> 
+                        <div class="orariCarta">
+                            <div class="giorniOrariCarta">
+                                <div class="giornoOrariCarta">
+                                    09:00 - 12:00  
+                                </div>
+                                <div class="giornoOrariCarta">
+                                    15:00 - 17:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indirizzoStudio">
+                            Via Umberto I° 54 - Lanzo T.se
+                        </div>
+                        <div class="mailTelefonoCarta">
+                            <div class="numeroTelefono contattoCarta">
+                                +39 3483949017
+                            </div>
+                            <div class="mail contattoCarta">
+                                borla2001@libero.it
+                            </div>
+                        </div>
+
+                </div>
+                <div class="giornoStudio">Mercoledì</div>
+                <div class="giornoStudio">Giovedì</div>
+                <div class="giornoStudio">Venerdì</div>
+            </div>
+        </div>
+        <div class="contattiCartaStudio">
+            <div class="numeroStudio contattoStudio">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="mailStudio contattoStudio">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="mailStudio contattoStudio">
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+
+        <hr> -->
+
+        <!-- <div class="sezioneHome">
+            <div class="contattiStudio">
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio N° 1
+                    </div>                    
+                </div>
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio N° 2
+                    </div>                    
+                </div>
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio N° 3
+                    </div>                    
+                </div>
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio N° 4
+                    </div>                    
+                </div>
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio N° 5
+                    </div>                    
+                </div>
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio N° 6
+                    </div>                    
+                </div>
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio via Umberto
+                    </div> 
+                    <div class="indirizzoStudio">
+                        Via Umberto I° 54 - Lanzo T.se
+                    </div>
+                    <div class="orariCarta">
+                        <div class="giorniOrariCarta">
+                            <div class="giornoOrariCarta">
+                                lun  
+                            </div>
+                            <div class="giornoOrariCarta">
+                                mer  
+                            </div>
+                            <div class="giornoOrariCarta">
+                                giov  
+                            </div>
+                            <div class="giornoOrariCarta">
+                                ven  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mailTelefonoCarta">
+                        <div class="numeroTelefono contattoCarta">
+                            +39 3483949017
+                        </div>
+                        <div class="mail contattoCarta">
+                            borla2001@libero.it
+                        </div>
+                    </div>
+                    <div class="contattiCartaStudio">
+                        <div class="numeroStudio contattoStudio">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="mailStudio contattoStudio">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="mailStudio contattoStudio">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="cartaContattoStudio">
+                    <div class="nomeStudio">
+                        Studio N° 8
+                    </div>                    
+                </div>
+            </div>
+        </div> -->
+
+        <div class="sezioneHome">
+            <div class="chiSono">
+                <div class="copertinaChiSono">
+                    <div class="fotoChiSono"></div>
+                    <div class="descrizioneChiSono">
+                        Medico specializzato in Ortopedia
+                    </div>
+                </div>
+                <div class="contattiChiSono">
+                    <div class="titoloContattiChiSono">
+                        CONTATTI
+                    </div>
+                    <div class="containerChiSono">
+                        <div class="descrizioneChiSono">
+                            Cellulare: +39 3483949017
+                        </div>
+                        <div class="descrizioneChiSono">
+                            Email: borla2001@libero.it
+                        </div>
+                        <div class="bottoneChiSono" style="background: #68a0fa;"><i class="fas fa-phone-alt"></i>&nbsp;Telefono</div>
+                        <div class="bottoneChiSono" style="background: #25D366;"><i class="fab fa-whatsapp"></i>&nbsp;Whatsapp</div>
+                        <div class="bottoneChiSono" style="background: #ff4d30"><i class="fas fa-envelope"></i>&nbsp;E-mail</div>
+                    </div>
+                </div>
+                <div class="timeLineChiSono">
+                    <div class="annoTimeLineChiSono">
+                        <div class="dataChiSono">
+                            1996
+                        </div>
+                        <div class="descrizioneDataChiSono">
+                            Laurea in Medicina e Chirurgia presso l'Università di Torino.<br><br>
+                            Tesi sperimentale: "Rilascio ionico metallico interfaccia protesica". PUBBLICAZIONE SCIENTIFICA MINERVA MEDICA.
+                        </div>
+                    </div>
+                    <div class="annoTimeLineChiSono">
+                        <div class="dataChiSono">
+                            2002
+                        </div>
+                        <div class="descrizioneDataChiSono">
+                            Specializzazione in ORTOPEDIA e TRAUMATOLOGIA presso l'Università di Torino: Tesi "Trattamento chirurgico delle fratture vertebrali".
+                        </div>
+                    </div>
+                    <div class="annoTimeLineChiSono">
+                        <div class="dataChiSono">
+                            2003-2004
+                        </div>
+                        <div class="descrizioneDataChiSono">
+                            Collaborazione contrattuale in sede presso Centre Hospitalier de LUXEMBURG, PRIMARIO DR. SCHUMAN.
+                        </div>
+                    </div>
+                    <div class="annoTimeLineChiSono">
+                        <div class="dataChiSono">
+                            2005
+                        </div>
+                        <div class="descrizioneDataChiSono">
+                            Collaborazione presso HOPITAL ARCHET II UNIVERSITÀ DI NIZZA (FR) Direttore Prof. Boileou (CHIRURGIA DELLA SPALLA).
+                        </div>
+                    </div>
+                    <div class="annoTimeLineChiSono">
+                        <div class="dataChiSono">
+                            2013
+                        </div>
+                        <div class="descrizioneDataChiSono">
+                            Inizio collaborazione con il Gruppo AFFIDEA.
+                        </div>
+                    </div>
+                </div>
+                <div class="affiliazioniChiSono">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="titoloSezione">
+            Patologie trattate maggiormente
+        </div>
+
+        <div class="sezioneHome">
+            <div class="sezioneLink">
+                <div class="sottotitoloSezione" onclick="apriScheda('osteoartrosi')">
+                    Dolore e rigidità all'anca? Probabilmente si tratta di osteoartrosi
+                </div>
+    
+                <div class="linkSottotitoliSezione">
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspChe cos'è l'osteoartrosi?
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspCome capire se si ha l'artrosi
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspÈ possibile curare l’osteoartrosi?
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspInfiltrazioni ecoguidate, tutto quello che serve sapere
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspLe infiltrazioni ecoguidate sono sicure?
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspLe iniezioni di acido ialuronico sono dolorose?
+                    </div>
+                </div>
+            </div>
+
+            <div class="verticalDivider"></div>
+
+            <div class="sezioneLink">
+                <div class="sottotitoloSezione">
+                    Dolore e rigidità all'anca? Probabilmente si tratta di osteoartrosi
+                </div>
+    
+                <div class="linkSottotitoliSezione">
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspChe cos'è l'osteoartrosi?
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspCome capire se si ha l'artrosi
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspÈ possibile curare l’osteoartrosi?
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspInfiltrazioni ecoguidate, tutto quello che serve sapere
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspLe infiltrazioni ecoguidate sono sicure?
+                    </div>
+                    <div class="linkSottotitoloSezione">
+                        <i class="fas fa-circle-notch linkIcon"></i>&nbspLe iniezioni di acido ialuronico sono dolorose?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="chiSono" class="sezioneTrasparente">
             <div class="titoloSezione">
                 Chi Sono
             </div>
-            
+
             <div id="map"></div>
         </div>
 
         <div id="contatti" class="sezioneBianca">
 
-            <div class="titoloSezione">
-                Contatti
-            </div>
-            
-            <div class="dividerTitolo">
-                <div class="divider"></div>
-            </div>
-
             <div class="contatto">
-                <div class="iconaContatto">                    
+                <div class="testoContatto">
                     <i class="fas fa-phone"></i>
                 </div>
-                &nbsp
-                <div class="testoContatto">
-                    +39 3764985768
-                </div>
             </div>
             
             <div class="contatto">
-                <div class="iconaContatto">                    
-                    <i class="fas fa-phone"></i>
-                </div>
-                &nbsp
                 <div class="testoContatto">
-                    +39 3764985768
-                </div>
-            </div>
-    
-            <div class="contatto">
-                <div class="iconaContatto">    
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                &nbsp
-                <div class="testoContatto">
-                    +39 3764985768
-                </div>
-            </div>
-            
-            <div class="contatto">
-                <div class="iconaContatto">    
                     <i class="fas fa-envelope"></i>
                 </div>
-                &nbsp
-                <div class="testoContatto">
-                    massimoborla@gmail.com
-                </div>
             </div>
-    
-            <div class="contatto">
-                <div class="iconaContatto">    
-                    <i class="fas fa-envelope"></i>
-                </div>
-                &nbsp
-                <div class="testoContatto">
-                    massimoborla@gmail.com
-                </div>
-            </div>
-            
-            <div class="contatto">
-                <div class="iconaContatto">    
-                    <i class="fas fa-envelope"></i>
-                </div>
-                &nbsp
-                <div class="testoContatto">
-                    massimoborla@gmail.com
-                </div>
-            </div>
-            
-            <div class="contatto">
-                <div class="iconaContatto">    
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                &nbsp
-                <div class="testoContatto">
-                    via Torino 32, Torino TO 
-                </div>
-            </div>
-        </div>
-
-        <div class="sottotitolo">
-            Domande frequenti
-        </div>
-
-        <div class="carta" onmouseover="overBottone(this)" onmouseout="outBottone(this)">
-            <div class="foto">
-                
-            </div>
-
-            <div class="testoCarta">
-                <div class="titoloCarta">
-                    Cos'è un'iniezione ecoguidata?
-                </div>
-
-                <div class="descrizioneCarta">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur inventore repudiandae doloribus animi distinctio sunt cumque eum. Quia aliquid non, natus, nulla iste dolor debitis, sequi eius dignissimos assumenda libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus odit cumque, voluptatibus quos tenetur corrupti amet perspiciatis omnis autem reiciendis nobis eveniet aperiam quas quam neque sequi mollitia consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nihil deleniti explicabo dolores hic quaerat magnam optio blanditiis adipisci aliquid unde, atque fugit amet tenetur? Quo reprehenderit laboriosam ipsum corrupti!
-                </div>
-            </div>
-        </div>
-
-        <div class="carta" onmouseover="overBottone(this)" onmouseout="outBottone(this)">
-            <div class="foto">
-
-            </div>
-
-            <div class="testoCarta">
-                <div class="titoloCarta">
-                    Un'iniezione ecoguidata fa male?
-                </div>
-
-                <div class="descrizioneCarta">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur inventore repudiandae doloribus animi distinctio sunt cumque eum. Quia aliquid non, natus, nulla iste dolor debitis, sequi eius dignissimos assumenda libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus odit cumque, voluptatibus quos tenetur corrupti amet perspiciatis omnis autem reiciendis nobis eveniet aperiam quas quam neque sequi mollitia consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nihil deleniti explicabo dolores hic quaerat magnam optio blanditiis adipisci aliquid unde, atque fugit amet tenetur? Quo reprehenderit laboriosam ipsum corrupti!
-                </div>
-            </div>
-        </div>
-
-        <div class="carta" onmouseover="overBottone(this)" onmouseout="outBottone(this)">
-            <div class="foto">
-                
-            </div>
-
-            <div class="testoCarta">
-                <div class="titoloCarta">
-                    Da cosa è causato il dolore all'anca?
-                </div>
-
-                <div class="descrizioneCarta">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur inventore repudiandae doloribus animi distinctio sunt cumque eum. Quia aliquid non, natus, nulla iste dolor debitis, sequi eius dignissimos assumenda libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus odit cumque, voluptatibus quos tenetur corrupti amet perspiciatis omnis autem reiciendis nobis eveniet aperiam quas quam neque sequi mollitia consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nihil deleniti explicabo dolores hic quaerat magnam optio blanditiis adipisci aliquid unde, atque fugit amet tenetur? Quo reprehenderit laboriosam ipsum corrupti!
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="carta" onmouseover="overBottone(this)" onmouseout="outBottone(this)">
-            <div class="foto">
-                
-            </div>
-
-            <div class="testoCarta">
-                <div class="titoloCarta">
-                    Dolore alla schiena
-                </div>
-
-                <div class="descrizioneCarta">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur inventore repudiandae doloribus animi distinctio sunt cumque eum. Quia aliquid non, natus, nulla iste dolor debitis, sequi eius dignissimos assumenda libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus odit cumque, voluptatibus quos tenetur corrupti amet perspiciatis omnis autem reiciendis nobis eveniet aperiam quas quam neque sequi mollitia consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nihil deleniti explicabo dolores hic quaerat magnam optio blanditiis adipisci aliquid unde, atque fugit amet tenetur? Quo reprehenderit laboriosam ipsum corrupti!
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
 
     <div class="footer">
+        <div class="finestrelle">
+            <div class="sinistra">
+                <div class="titoliFooter">
+                    INFO
+                </div>
+                <div class="testiFooter">
+                    <div class="sinistra">
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centro">
+                <div class="titoliFooter">
+                    INFO
+                </div>
+                <div class="testiFooter">
+                    <div class="sinistra">
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="destra">
+                <div class="titoliFooter">
+                    INFO
+                </div>
+                <div class="testiFooter">
+                    <div class="sinistra">
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                        <div class="rigaFooter">
+                            Studi
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
         
     </div>
     

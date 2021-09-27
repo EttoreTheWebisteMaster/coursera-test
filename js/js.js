@@ -1,10 +1,6 @@
-function overBottone(element) {
-    element.style.animationName = "onCartaOver";
-}
-
-function outBottone(element) {
-    element.style.animationName = "onCartaOut";
-}
+window.onload = function() {
+  window.history.pushState("", "Index", "http://localhost/--%20Siti%20--/Massimo%20Borla/Massimo%20Borla/")
+};
 
 let map;
 
@@ -20,4 +16,9 @@ function initMap() {
       title: "Studio di Massimo Borla",
       animation: google.maps.Animation.DROP
   });
+}
+
+function apriScheda(nome) {
+  //window.history.pushState("", nome, "http://localhost/--%20Siti%20--/Massimo%20Borla/Massimo%20Borla/"+ nome +".html");
+  window.location.replace(nome +".html");
 }

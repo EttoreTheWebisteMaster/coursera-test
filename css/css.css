@@ -13,60 +13,168 @@
     src: url('../fonts/futura light bt.ttf');
 }
 
+@font-face {
+    font-family: FuturaLightItalic;
+    src: url('../fonts/Futura Light Italic font.ttf');
+}
+
+@font-face {
+    font-family: FuturaHeavy;
+    src: url('../fonts/Futura Heavy font.ttf');
+}
+
 body {
     margin: 0px;
+    background-color: #f9f9f93d;
 
-    font-family: FuturaMedium;
+    font-family: Roboto;
 }
 
 #titolo {
     margin: 0px;
 
-    font-family: FuturaXB;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
 }
 
 #map {
-    height: 300px;
-    width: 300px;
-  }
+    height: 480px;
+    width: 380px;
+    border-radius: 5px;
+}
+
+.containerLoghiHeader {
+    z-index: 7;
+    box-shadow: 0px -8px 15px 0px black;
+    position: relative;
+}
 
 .header {
-    width: 100vw;
-    height: 100vh;
+    width: 88%;
 
-    background: linear-gradient( 
-        90deg
-         , rgb(28 199 120) 0%, rgb(51 127 136) 100%);
+    color: white;
+
+    background: linear-gradient(47deg, #467dd6 0%, #5790ec 50%, #6ea6ff 100%);
+
+    clip-path: polygon(0% 0, 98% 0, 100% 100%, 0% 100%);
 
     display: flex;
 
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.containerTitoli {
+    display: flex;
 }
 
 .titoli {
-    width: 100%;
-    height: 100%;
+    padding: 0px 0px 0px 30px;
+    margin: 20px 0px;
 
-    color: white;
+    cursor: pointer;
 
     display: flex;
 
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    border: 1px red;
+    border-radius: 5px;
 }
 
+.titolo {
+    padding: 0px 0px 0px 50px;
+    
+    font-size: 15px;
+}
+
+.sottotitolo {
+    padding: 0px 0px 0px 50px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 100;
+}
+
+.verticalDivider {
+    height: 200px;
+    box-shadow: 0px 0px 0px 1px #649efb;
+}
+
+.parolaDifficile {
+    font-weight: 900;
+    color: #3e3838;
+    cursor: pointer;
+}
+
+.loghi {    
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background: linear-gradient( 
+        360deg
+        , #c7c7c72b 0%, #ffffff 60%, #ffffff 100%);
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.loghi > div {
+    margin: 0px 30px 0px 0px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+.logoAffidea {
+    width: 85px;
+    height: 60px;
+
+    background-image: url('../img/logoAffidea-scritta.png');
+}
+
+.logoCdc {
+    width: 85px;
+    height: 60px;
+
+    background-image: url('../img/logoCDC.png');
+}
+
+.contattiHeader {
+    width: 50%;
+
+    padding: 10px 0px 10px 0px;
+
+    font-size: 25px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.contatto {
+    padding: 5px 0px 5px 0px;
+}
 
 .navbar {
     width: 100%;
-    height: 70px;
 
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     
-    padding: 40px 0px 40px 0px;
+    padding: 20px 0px 20px 0px;
 
     display: flex;
 
@@ -82,6 +190,40 @@ body {
     cursor: pointer;
 }
 
+.subNavbar {    
+    font-family: 'Encode Sans';
+    font-weight: 500;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-transform: uppercase;
+}
+
+.subNavbarElement {
+    padding: 10px 75px;
+    margin: 0px 0px 0px -5px;
+    background: whitesmoke;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: -2px -5px 10px 1px #949494;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subNavbarElementActive {
+    z-index: 5;
+    height: 30px;
+    background: #487fd8;
+    color: white;
+    font-weight: 600;
+}
+
 .freccia {
     width: 100%;
 
@@ -95,50 +237,243 @@ body {
     justify-content: center;
 }
 
-.sezioneBianca {
-    width: 100%;
+.sezioneHome {
+    width: 80%;
     height: auto;
 
-    border-radius: 2px;
+    margin: 25px 0px 40px 0px;
 
-    margin: 30px 0px 30px 0px;
-    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    color: black;
+.chiSono {
+    width: 1200px;
+    height: 600px;
+    background: white;
+    box-shadow: 0.5px 0.5px 4px 1px #a7a7a75e;
+    border-radius: 3px;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.chiSono > div {
+    width: 45%;
+}
+
+.copertinaChiSono {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.contattiChiSono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottoneChiSono {
+    width: 200px;
+    height: 50px;
+    background-color: #a7a7a75c;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: inset 0 0 30px -5px #ffffff30, 0 0 1px 0px #6f6f6f;
+    color: white;    
+    font-family: 'Encode Sans';
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.annoTimeLineChiSono {
+    display: flex;
+    margin: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.dataChiSono{
+    width: 15%;
+}
+
+.descrizioneDataChiSono {
+    padding: 0px 25px;
+}
+
+.fotoChiSono {
+    width: 300px;
+    height: 255px;
+
+    background-image: url('../img/foto-profilo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.containerGiorni {
+    width: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.giornoStudio {
+    width: 275px;
+    background: white;
+    border: 1px solid black ;
+}
+
+.contattiStudio {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cartaContattoStudio {
+    width: 350px;
+
+    margin: 10px;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px whitesmoke;
     background-color: white;
+
+    cursor: pointer;
+}
+
+.nomeStudio {
+    padding: 20px 25px 15px 25px;
+    font-size: 24px;
+}
+
+.indirizzoStudio {
+    padding: 0px 0px 10px 25px;
+    font-size: 14px;
+    color: grey;
+}
+
+.giorniOrariCarta {
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #563b3bb3;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.giornoOrariCarta {
+    background-color: #dedede7a;
+    padding: 6px 8px;
+    border-radius: 2px;
+}
+
+.contattoCarta {
+    width: 100%;
+
+    margin: 5px;
+    padding: 10px 0px;
+
+    background-color: #efefef;
+    text-align: center;
+    color: #563b3bb3;
+}
+
+.mailTelefonoCarta {
+    padding: 20px 0px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sezioneTrasparente {
+.contattiCartaStudio {
     width: 100%;
-    height: auto;
 
-    margin: 30px 0px 30px 0px;
-
-    color: white;
-    background-color: transparent;
+    padding: 10px 0px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+}
+
+.contattoStudio {    
+    width: 60px;
+    height: 60px;
+    
+    margin: 0px 0px 5px 0px;
+
+    color: white;
+    background-color: #649efb;
+    
+    border-radius: 50px;
+    box-shadow: 1px 1px 3px 1px #00000045;
+    
+    font-size: 30px;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sezioneLink {
+    padding: 0px 40px 0px 40px;
+}
+
+.linkIcon {
+    font-size: 18px;
+}
+
+.sottotitoloSezione{
+    width: 80%;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.linkSottotitoliSezione {
+    padding: 15px 0px 0px 20px;
+
+    font-size: 22px;
+}
+
+.linkSottotitoloSezione {
+    padding: 5px;
+
+    cursor: pointer;
 }
 
 .titoloSezione {
-    width: 100%;
-    padding: 20px;
-    
-    background: linear-gradient( 90deg, rgb(28 199 120) 0%, rgb(51 127 136) 100%);
-    color: white;
+    width: 81%;
 
-    font-size: 30px;
+    padding: 10px 0px 10px 0px;
+    margin: 40px 0px 0px 0px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    color: #568feb;
+    font-size: 35px;
+    font-family: 'FuturaXB';
     text-transform: uppercase;
-
-    display: flex;
-
-    justify-content: center;
 }
 
 .dividerTitolo {
@@ -147,14 +482,6 @@ body {
     display: flex;
     
     justify-content: center;
-}
-
-.sottotitoloSezione {
-    width: 100%;
-
-    padding: 50px 0px 50px 200px;
-
-    font-size: 35px;
 }
 
 .testiSezione {
@@ -176,12 +503,6 @@ body {
 
     border: 0;
     border-top: 1px solid;
-}
-
-.titolo {
-    font-size: 60px;
-
-    padding: 0px 0px 0px 45px;
 }
 
 .bottoniHeader {
@@ -227,84 +548,6 @@ body {
     justify-content: center;
 }
 
-.sottotitolo {
-    width: 80%;
-
-    padding: 10px 10px 10px 50px;
-    margin: 0px 0px 25px 0px;
-
-    font-size: 32px;
-    font-family: FuturaLight;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-.carta {
-    width: 90%;
-    height: 250px;
-
-    padding: 0% 5% 0% 5%;
-
-    cursor: pointer;
-
-    background-color: transparent;
-
-    display: flex;
-
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-
-    animation-duration: .3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.testoCarta {
-    width: 70%;
-
-    padding: 25px;
-}
-
-.titoloCarta {
-    font-size: 30px;
-}
-
-.descrizioneCarta {
-    height: 70%;
-
-    text-align: justify;
-
-    display: flex;
-    align-items: center;
-}
-
-@keyframes onCartaOver {
-    from {
-        transform: none;
-        box-shadow: none;
-        background-color: transparent;
-    }
-    to {
-        transform: scale(1.1px);
-        box-shadow: #ffffff30 0px 0px 10px 10px;
-        background-color: #ffffff30;
-    }
-}
-
-@keyframes onCartaOut {
-    from {
-        transform: scale(1.1px);
-        box-shadow: #ffffff30 0px 0px 10px 10px;
-        background-color: #ffffff30;
-    }
-    to {
-        transform: none;
-        box-shadow: none;
-        background-color: transparent;
-    }
-}
-
 .foto {
     height: 200px;
     width: 200px;
@@ -323,4 +566,22 @@ body {
     margin: 50px 0px 0px 0px;
 
     background-color: whitesmoke;
+
+    display: flex;
+}
+
+.finestrelle {
+    
+}
+
+.testiFooter {
+
+}
+
+.titoliFooter {
+
+}
+
+.rigaFooter {
+
 }
