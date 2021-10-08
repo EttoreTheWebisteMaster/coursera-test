@@ -8,135 +8,161 @@
 
     <!-- CSS -->
     <link rel='stylesheet' href='css/css.css' media='screen'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
-    <div class="header">
-        <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
-            <div class="titoli" onclick="apriScheda('index')">
-                <div class="titolo">
-                    <h1 id="titolo">Massimo Borla</h1>
-                </div>
-        
-                <div class="sottotitolo">
-                    Medico-chirurgo specialista in Ortopedia e Traumatologia
-                </div>
+    <div class="navbarContainer">
+        <div class="containerLoghiHeader">
+            <div class="loghi">
+                <div class="logoAffidea"></div>
+                <div class="logoCdc"></div>
             </div>
             
-
-        </div>
-
-        <div class="navbar">
-            <div class="navbarElement">
-                Contatti 
+            <div class="header">
+                <div class="containerTitoli">
+                    <div class="titoli">
+                        <div class="titolo">
+                            <h1 id="titolo">Dr. Massimo Borla</h1>
+                        </div>
+                
+                        <div class="sottotitolo">
+                            Medico-chirurgo specialista in Ortopedia e Traumatologia
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="navbarElement">
-                Avvertenze
-            </div>
         </div>
-
+    
+        <div class="subNavbar">
+            <div class="subNavbarElement" onclick="apriScheda('index')" style="z-index: 4; margin: 0px;">Home</div>
+            <!--<div class="subNavbarElement" style="z-index: 3;">Contatti</div>-->
+            <div class="subNavbarElement subNavbarElementActive" onclick="apriScheda('osteoartrosi')" style="z-index: 2;">Infiltrazioni</div>
+            <div class="subNavbarElement" onclick="apriScheda('faccettearticolate')" style="z-index: 1;">Lombalgia</div>
+        </div>
     </div>
 
     <div class="center">
-        <div class="titoloSezione">
-            Dolore e rigidità all'anca? Probabilmente si tratta di osteoartrosi 
-        </div>
 
-        
-        
-        <div class="sezioneHome">
-
-            <div class="dividerTitoloS">
-                <div class="sottotitoloSezioneS">
-                    Che cos'è l'osteoartrosi?
+        <div class="sezioneOsteoartrosi">
+            <div class="infiltrazioni">
+                <div class="titoloSezione">
+                    Dolore e rigidità all'anca? Probabilmente si tratta di <b>osteoartrosi</b>
                 </div>
-                <div class="testoAnca">
-                    L'osteoartrosi è la più comune causa di dolore e limitazione della mobilità dell'anca, caratterizzata dal progressivo <span class="parolaDifficile">deterioramento articolare</span> che porta a trovare difficile svolgere attività comuni che vanno dal piegarsi, vestirsi, indossare calze e scarpe fino a rendere fastidiosa persino una passeggiata
-                </div>
-            </div>
-
-            <div class="foto">
                 
-            </div>
-        </div>
+                <div class="dividerSezioneOsteartrosi">
 
+                    <div class="TitoloTestoOsteoartrosi">
+                        <div class="titoloSezioneOsteoartrosi">
+                            Che cos'è l'osteoartrosi?
+                        </div>
+    
+                        <div class="testoSezioneOsteoartrosi">
+                            L'osteoartrosi è la più comune causa di dolore e limitazione della mobilità dell'anca,
+                            caratterizzata dal progressivo <span class="parolaDifficile" onclick="mostraPopover(this, 'Deterioramento articolare', 'Il guastarsi, il peggiorare delle condizioni delle articolazioni.')">deterioramento articolare</span> che porta a trovare difficile svolgere attività comuni che vanno dal piegarsi,
+                            vestirsi, indossare calze e scarpe fino a rendere fastidiosa persino una passeggiata.
+    
+                        </div>
 
-        
-        <div class="sezioneHome">
-
-            <div class="foto">
-                
-            </div>
-
-            <div class="dividerTitoloD">
-                <div class="sottotitoloSezioneD">
-                    Come capire se si ha l'artrosi? 
+                    </div>
+                    
+                    <div class="fotoSezione" style="background-image: url('./img/artrosi_anca1.jpg');"></div>
                 </div>
-                <div class="testoAnca">
-                    I segnali caratteristici di questa patologia sono il dolore durante l'attività fisica e la rigidità dei movimenti della parte inferiore del corpo. Particolare attenzione va posta inoltre da chi, con il tempo e senza nessuna particolare motivazione, inizia a zoppicare
+    
+                <div class="dividerSezioneOsteartrosi">
+
+                    <div class="fotoSezione" style="background-image: url('./img/artrosi_anca2.jpg');"></div>
+
+                    <div class="TitoloTestoOsteoartrosi">
+                        <div class="titoloSezioneOsteoartrosi">
+                            Come capire se si ha l'artrosi?
+                        </div>
+    
+                        <div class="testoSezioneOsteoartrosi">
+                            segnali caratteristici di questa patologia sono il dolore durante l'attività fisica e la rigidità dei movimenti della parte inferiore del corpo.
+                            Particolare attenzione va posta inoltre da chi, con il tempo e senza nessuna particolare motivazione, inizia a zoppicare.
+                            Superati i 50 anni 1 persona su 2 soffre di dolori articolari causati dall'artrosi.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-
-        
-       
-        <div class="sezioneHome">
-
-            <div class="dividerTitoloS">
-            <div class="sottotitoloSezioneS">
-            È possibile curare l’osteoartrosi?
-            </div>
-            <div class="testoAnca">
-                Essendo una patologia degenerativa e dovuta all’avanzare dell’età, tutt'oggi non esiste ancora un metodo per la completa guarigione. Tuttavia, grazie a diversi studi portati avanti dagli anni '70 e grazie all'ausilio delle più avanzate tecnologie del campo, è stato messo a punto un efficace trattamento che migliora notevolmente la propria situazione: le infiltrazioni ecoguidate
-            </div>
-            </div>
             
-            <div class="foto">
-                
+                <div class="dividerSezioneOsteartrosi">
+                    <div class="TitoloTestoOsteoartrosi">
+                        <div class="titoloSezioneOsteoartrosi">
+                            È possibile curare l’osteoartrosi?
+                        </div>
+    
+                        <div class="testoSezioneOsteoartrosi">
+                            Adesso che abbiamo un quadro più chiaro delle cause e dei problemi dell'osteoartrosi una domanda sorge spontanea:
+                            è possibile curare l'osteoartrosi?
+                            Essendo una patologia degenerativa e dovuta all’avanzare dell’età,
+                            tutt'oggi non esiste ancora un metodo per la completa guarigione.
+                            Tuttavia, grazie a diversi studi portati avanti dagli anni '70 e grazie all'ausilio delle più avanzate tecnologie del campo,
+                            è stato messo a punto un efficace trattamento che migliora notevolmente la propria situazione: le infiltrazioni ecoguidate
+                        </div>
+                    </div>
+                    
+                    <div class="fotoSezione" style="background-image: url('./img/artrosi_anca3.jpg');"></div>
+                </div>
+    
+                <div class="dividerSezioneOsteartrosi">
+                    <div class="fotoSezione" style="background-image: url('./img/artrosi_anca4.png');"></div>
+
+                    <div class="TitoloTestoOsteoartrosi">
+                        <div class="titoloSezioneOsteoartrosi">
+                            Infiltrazioni ecoguidate, tutto quello che serve sapere
+                        </div>
+    
+                        <div class="testoSezioneOsteoartrosi">
+                            Le infiltrazioni sono iniezioni effettuate in corrispondenza dell'articolazione deteriorata.
+                            Il medicinale iniettato varia in correlazione all'andamento dell'osteoartrosi:
+                            per alleviare un dolore acuto ed eccessivo verranno effettuate iniezioni di cortisone e anestetico;
+                            se invece l'artrosi si trova ad uno stadio avanzato è necessario portare avanti un trattamento a base di acido ialuronico che contribuisce a lubrificare le articolazioni,
+                            ad attutire gli stress a cui le sottoponiamo tutti i giorni e le protegge da eventuali infiammazioni.
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
 
+        <div class="sezioneOsteoartrosi">
+                <div class="paginaChiSono">
+                    <div class="contattiChiSono">
+                        <div class="titoloContattiChiSono">
+                            Contatti
+                        </div>
+                        <div class="sottotitoloContattiChiSiamo">
+                            Per qualsiasi dubbio o domanda non esitare a contattarmi!
+                        </div>
+                        <div class="descrizioneContattiChiSono">
+                            +39 348 394 9017
+                        </div>
+                        <div class="descrizioneContattiChiSono">
+                            borla2001@libero.it
+                        </div>
+                        <div class="sottotitoloContattiChiSiamo">
+                            Sentiamoci subito grazie ai bottoni di contatto rapidi:
+                        </div>
+                        <div class="containerBottoniChiSono">
+                            <div class="bottoneChiSono" style="background: #68a0fa;"><i class="fas fa-phone-alt"></i>&nbsp;Telefono</div>
+                            <div class="bottoneChiSono" style="background: #25D366;"><i class="fab fa-whatsapp"></i>&nbsp;Whatsapp</div>
+                            <div class="bottoneChiSono" style="background: #ff4d30"><i class="fas fa-envelope"></i>&nbsp;E-mail</div>
+                        </div>
+                    </div>
 
-        <div class="titoloSezione">
-            Infiltrazioni ecoguidate, tutto quello che serve sapere
+                    <div class="copertinaChiSono">
+                        <div class="fotoSezioneOsteoartrosi"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        
-        <div class="sezioneHome">
-
-            <div class="foto">
-                
-            </div>
-
-            <div class="dividerTitoloD">
-            <div class="sottotitoloSezioneD">
-            Le infiltrazioni ecoguidate sono sicure?
-            </div>
-            <div class="testoAnca">
-                Per tutta la durata del trattamento lo specialista è assistito da un’ecografia in tempo reale la quale permette, con certezza millimetrica, di raggiungere l’articolazione evitando nervi, arterie e vene principali
-            </div>
-        </div>
-        </div>
-
-        
-        <div class="sezioneHome">
-            
-            <div class="dividerTitoloS">
-            <div class="sottotitoloSezioneS">
-            Le iniezioni di acido ialuronico sono dolorose?
-            </div>
-            <div class="testoAnca">
-                La procedura dura pochi secondi e non provoca particolari dolori.
-                A seguito dell’infiltrazione si può presentare un dolore per le prime 24-48 ore la cui intensità può variare da “un lieve fastidio” ad un dolore più intenso
-
-            </div>
-            </div>
-
-            <div class="foto">
-                
-            </div>
 
     </div>
 

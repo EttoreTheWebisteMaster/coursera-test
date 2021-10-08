@@ -1,7 +1,3 @@
-window.onload = function() {
-  window.history.pushState("", "Index", "http://localhost/--%20Siti%20--/Massimo%20Borla/Massimo%20Borla/")
-};
-
 let map;
 
 function initMap() {
@@ -19,6 +15,32 @@ function initMap() {
 }
 
 function apriScheda(nome) {
-  //window.history.pushState("", nome, "http://localhost/--%20Siti%20--/Massimo%20Borla/Massimo%20Borla/"+ nome +".html");
   window.location.replace(nome +".html");
+}
+
+function mostraPopover(element, titolo, testo = null, immagine = null) {
+  if(element.classList.contains("popoverAperto")) {
+    element.classList.remove("popoverAperto");
+    element.removeChild(element.firstChild);
+    element.removeChild(element.lastElementChild);
+  } else {
+    let popover = 
+    '<div class="popoverContainer">' +
+      '<div class="popover">' +
+        '<div class="popoverArrow"></div>' +
+  
+        '<div class="titoloPopover">' +
+          titolo +
+        '</div>' +
+  
+        '<div class="testoPopover">' +
+            testo +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  
+    element.insertAdjacentHTML('afterbegin', popover);
+    element.insertAdjacentHTML('beforeend', '<i class="fas fa-times-circle chiudiPopover"></i>');
+    element.classList.add("popoverAperto");
+  }
 }
